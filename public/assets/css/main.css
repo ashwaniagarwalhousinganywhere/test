@@ -1,0 +1,112 @@
+ :root {
+    font-size: 16px;
+    --Heading1: 72px;    
+    --Heading2: 70px;
+    --Heading3: 24px;
+    --Heading4: 36px;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:rgb(208, 219, 218);
+    height: 100%;
+    margin: auto;
+}
+
+.page-container {
+    margin: 60px auto 0px auto;
+    padding: 0px 0px;
+    max-width: 1000px !important;
+}
+
+@media screen and (max-width: 769px) {
+    .page-container {
+        margin: 50px auto 0px auto;
+        padding: 0px 0px;
+        max-width: 767px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-container {
+        margin: 50px auto 0px auto;
+        padding: 0px 0px;
+        max-width: 480px !important;
+    }
+}
+
+h1 {
+    font-family: orpheuspro, serif;
+    font-size: var(--Heading1);
+    font-weight: normal;
+}
+
+h3 {
+    font-family: orpheuspro, serif;
+    font-size: var(--Heading3);
+    color: initial;
+}
+
+.character-image
+{
+    border:1px solid black;
+    cursor: pointer;
+}
+
+.all-characters-heading
+{
+    margin-left: 15px;
+}
+
+.location-header-container
+{
+    border-bottom-style: outset;
+    width: auto;
+}
+
+.all-episodes
+{
+    padding-bottom: 5px;
+    background-color: cadetblue;    
+    height: 120px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 10px 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);    
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+
+  .page-item-btn{
+      padding: 5px 5px 5px 5px;
+  }
+
+  .page-item-btn button{
+      font-size: x-large;
+  }
+
+  .page-navigation-items
+  {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+  }
